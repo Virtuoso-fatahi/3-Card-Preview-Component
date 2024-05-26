@@ -1,0 +1,149 @@
+/* || FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* || VARIABLE SYTLE */
+:root {
+  /* 1. COLOR STYLE */
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+  --Very-light-gray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+
+  /* 2. FONT STYLE */
+  --Font-size: 15px; /* Body copy*/
+  --Font-base-one: "Lexend Deca", san-serif; /* font weight - 400 */
+  --Font-base-two: "Big Shoulders Display", san-serif; /* font weight - 700 */
+}
+
+/* || BODY STYLE */
+body {
+  background-color: var(--Very-light-gray);
+}
+
+#main_container {
+  width: 64%;
+  margin: 100px auto 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  max-width: 280px;
+  height: 430px;
+  padding: 35px;
+  font-family: var(--Font-base-one);
+}
+
+section h2 {
+  font-weight: 700;
+  font-family: var(--Font-base-two);
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+
+section p {
+  line-height: 1.5;
+  font-size: var(--Font-size);
+}
+
+section button {
+  margin: 65px 0 0;
+  padding: 12px 25px;
+  border-radius: 20px;
+  border: none;
+  font-family: var();
+}
+
+/* || INDIVIDUAL STYLE */
+#sedans {
+  background-color: var(--Bright-orange);
+  color: var(--Transparent-white);
+}
+
+#sedans button {
+  color: var(--Bright-orange);
+}
+
+#sedans button:hover {
+  background-color: var(--Bright-orange);
+  color: var(--Transparent-white);
+  border: 1px solid var(--Transparent-white);
+  cursor: pointer;
+}
+
+#suvs {
+  background-color: var(--Dark-cyan);
+  color: var(--Transparent-white);
+}
+
+#suvs button {
+  color: var(--Dark-cyan);
+}
+
+#suvs button:hover {
+  background-color: var(--Dark-cyan);
+  color: var(--Transparent-white);
+  border: 1px solid var(--Transparent-white);
+  cursor: pointer;
+}
+
+#luxury {
+  background-color: var(--Very-dark-cyan);
+  color: var(--Transparent-white);
+}
+
+#luxury button {
+  color: var(--Very-dark-cyan);
+}
+
+#luxury button:hover {
+  background-color: var(--Very-dark-cyan);
+  color: var(--Transparent-white);
+  border: 1px solid var(--Transparent-white);
+  cursor: pointer;
+}
+
+/* || RWD STYLE */
+@media screen and (min-width: 900px) {
+  #sedans {
+    border-radius: 5px 0 0 5px;
+  }
+
+  #luxury {
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #sedans {
+    border-radius: 5px 5px 0 0;
+  }
+
+  #luxury {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+/* || ATTRIBUTION */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 45px;
+  font-family: var(--Font-base-one);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
